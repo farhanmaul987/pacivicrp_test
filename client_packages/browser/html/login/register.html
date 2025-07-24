@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="../../css/output.css" rel="stylesheet" />
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div
+      class="block w-xl p-6 bg-tersiary rounded-lg shadow-sm mx-auto my-auto"
+    >
+      <h2 class="text-center text-3xl mb-6 text-white">Register Account</h2>
+      <form class="max-w-md mx-auto">
+        <div class="alert login-alert mb-7" role="alert"></div>
+
+        <div class="mb-7">
+          <input
+            type="text"
+            name="username"
+            id="registerName"
+            min="3"
+            class="login-input"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="mb-7">
+          <input
+            type="text"
+            name="email"
+            id="registerEmail"
+            class="login-input"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            name="password"
+            id="registerPass"
+            min="5"
+            class="login-input"
+            placeholder="Password"
+            required
+          />
+          <small class="pl-2 text-xs text-white"
+            >Minimum of 5 characters long</small
+          >
+        </div>
+        <div class="mb-7">
+          <input
+            type="password"
+            name="password"
+            id="registerPass2"
+            min="5"
+            class="login-input"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+
+        <div class="flex justify-center mb-4">
+          <button
+            type="submit"
+            id="registerBtn"
+            class="login-btn"
+            onclick="sendAccountInfo(1);"
+          >
+            Register
+          </button>
+        </div>
+        <small class="pl-2 text-sm text-white">
+          Already have an account?
+          <a href="index.html" class="text-primary">
+            <u>Go back</u>
+          </a>
+        </small>
+      </form>
+    </div>
+
+    <script src="../../js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "db_host": "localhost",
+  "db_name": "pacivic_testdb",
+  "db_username": "root",
+  "db_password": "",
+  "db_connectionLimit": 250,
+  "db_debug": false,
+  "defaultSpawnPosition": { "x": -303.746, "y": -833.276, "z": 31.663 }
+}

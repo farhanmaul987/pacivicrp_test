@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-primary: Poppins, sans-serif;
+  --font-title: "Quintessential", serif;
+  --color-primary: #00adb5;
+  --color-secondary: #393e46;
+  --color-tersiary: #222831;
+  --color-red-warn: #fb2c36;
+}
+
+:root {
+  @apply font-primary;
+}
+
+@layer components {
+  /* Login & Register */
+  .login-input {
+    @apply bg-gray-700 border border-primary text-sm rounded-3xl focus:outline-none block w-full p-2.5 pl-4 text-white;
+  }
+  .login-btn {
+    @apply text-white w-full bg-tersiary border border-primary px-6 py-2 rounded-3xl;
+  }
+  .login-alert {
+    @apply w-full px-4 py-3 text-sm text-red-warn border border-red-warn bg-transparent rounded-3xl;
+  }
+
+  /* Inventory */
+  .iv-box-l {
+    @apply block w-lg p-5 bg-tersiary text-white rounded-lg my-auto;
+  }
+  .iv-box-r {
+    @apply block w-lg p-5 text-white rounded-lg my-auto;
+  }
+  .item-box {
+    @apply w-16 h-16 p-1 m-1 border border-white rounded-md flex items-center justify-center;
+  }
+
+  /* Balance */
+  .blc-box {
+    @apply w-7xl bg-tersiary text-white rounded-lg my-auto;
+  }
+  .action-box {
+    @apply border border-primary rounded-lg w-[80%] py-10 flex flex-col items-center space-y-6;
+  }
+  .blc-btn-opt {
+    @apply border-2 border-primary px-4 py-2 rounded-md;
+  }
+  .blc-input {
+    @apply bg-secondary focus:outline-none rounded-md w-[80%] px-4 py-2;
+  }
+  .blc-btn {
+    @apply text-white w-full bg-tersiary border-2 border-primary px-6 py-2 rounded-md;
+  }
+}

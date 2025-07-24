@@ -1,0 +1,7 @@
+node_modules/
+bin/
+dotnet/
+maps/
+
+BugTrap-x64.dll
+linux_x64.tar.gz

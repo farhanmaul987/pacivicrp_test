@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="../../css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="flex items-center justify-center min-h-screen">
+    <div
+      class="block w-xl p-6 bg-tersiary text-white rounded-lg shadow-sm mx-auto my-auto"
+    >
+      <h2 class="text-center text-3xl mb-5">Welcome To</h2>
+      <h1 class="text-center text-4xl mb-6 font-title">PACIVIC ROLEPLAY</h1>
+      <form class="max-w-md mx-auto">
+        <div class="alert login-alert mb-7" role="alert"></div>
+
+        <div class="mb-8">
+          <!-- <label for="loginName" class="block mb-2 text-white">Username</label> -->
+          <input
+            type="text"
+            name="username"
+            id="loginName"
+            class="login-input"
+            placeholder="Username"
+            required
+          />
+        </div>
+
+        <div class="mb-8">
+          <!-- <label for="loginPass">Password</label> -->
+          <input
+            type="password"
+            name="password"
+            id="loginPass"
+            class="login-input"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="flex justify-center mb-4">
+          <button
+            type="submit"
+            id="loginBtn"
+            class="login-btn"
+            onclick="handleLoginClick(this); sendAccountInfo(0);"
+          >
+            Login
+          </button>
+        </div>
+        <small class="pl-2 text-sm">
+          Don't have an account?
+          <a href="register.html" class="text-primary">
+            <u>Register here</u>
+          </a>
+        </small>
+      </form>
+    </div>
+
+    <script src="../../js/login.js"></script>
+  </body>
+</html>
