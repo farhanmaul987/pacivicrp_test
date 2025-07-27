@@ -13,7 +13,6 @@ mp.events.add("client:showBalance", (bankBalance, cashBalance) => {
   setTimeout(() => {
     mp.gui.cursor.show(true, true);
 
-    // Kirim data ke browser UI
     balanceBrowser.execute(`updateBalance(${bankBalance}, ${cashBalance});`);
   }, 500);
 });

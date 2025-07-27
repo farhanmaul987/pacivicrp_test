@@ -1,17 +1,12 @@
-const presetLocations = {
-  airport: new mp.Vector3(-1037.6, -2738.6, 13.8),
-  mount: new mp.Vector3(449.3, 5566.5, 796.1),
-  garage: new mp.Vector3(215.8, -810.1, 30.7),
-  beach: new mp.Vector3(-1482.3, -1024.5, 6.0),
-};
+// const fixLocations = {
+//   airport: new mp.Vector3(),
+//   mount: new mp.Vector3(),
+//   dock: new mp.Vector3(),
+//   beach: new mp.Vector3(),
+// };
 
 mp.events.addCommand("tp", (player, fullText) => {
   const args = fullText.trim().split(" ");
-
-  if (args.length === 1 && presetLocations[args[0]]) {
-    player.position = presetLocations[args[0]];
-    return player.outputChatBox(`📍 Teleport ke lokasi preset: ${args[0]}`);
-  }
 
   if (args.length === 3) {
     const x = parseFloat(args[0]);

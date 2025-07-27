@@ -42,10 +42,9 @@ function sendAccountInfo(type) {
   }
 }
 
-function showError(msg) {
-  alert(msg); // Ganti sesuai kebutuhan UI lu (bisa pakai modal/toast)
-}
+// function showError(msg) {
+//   alert(msg); // Ganti sesuai kebutuhan UI lu (bisa pakai modal/toast)
+// }
 
-function handleLoginClick(btn) {
-  // Placeholder buat kompatibel sama onclick yg udah ditulis
-}
+// function handleLoginClick(btn) {
+// }

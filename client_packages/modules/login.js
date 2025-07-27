@@ -4,9 +4,19 @@ mp.events.add("client:loginData", (username, password) => {
   mp.events.callRemote("server:loginAccount", username, password);
 });
 
-mp.events.add("client:registerData", (username, email, password) => {
-  mp.events.callRemote("server:registerAccount", username, email, password);
-});
+mp.events.add(
+  "client:registerData",
+  (username, first_name, last_name, email, password) => {
+    mp.events.callRemote(
+      "server:registerAccount",
+      username,
+      first_name,
+      last_name,
+      email,
+      password
+    );
+  }
+);
 
 mp.events.add("client:loginHandler", (handle) => {
   switch (handle) {

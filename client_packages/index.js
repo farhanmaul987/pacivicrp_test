@@ -1,6 +1,8 @@
 require("./modules/login.js");
 require("./modules/balance.js");
 
+require("./commands/vehValidation.js");
+
 mp.events.add("playerReady", () => {
   mp.events.call("client:showLoginScreen");
 });
